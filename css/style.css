@@ -1,6 +1,11 @@
 @import url("font.css");
 body{background:#101010;color:#f0f0ee;font-size:16px;font-family:"Open Sans",Sans Serif;text-align:center}
-header{background:url("../img/wood_bg.jpg");border-top:5px solid #e99f16;overflow:hidden;padding:2em .5em;}
+header{background:url("../img/wood_bg.jpg");border-top:5px solid #e99f16;overflow:hidden;padding-bottom:2em;}
+header nav{background:#462d1c;margin:0;}
+header nav ul{margin:0;padding:0;}
+header nav ul li{display:inline-block;font-family:'Lobster' cursive;padding:1em .5em;}
+header nav ul li a{color:#f0f0ee;text-decoration:none;-webkit-transition:all 0.5s ease;-moz-transition:all 0.5s ease;-o-transition:all 0.5s ease;-ms-transition:all 0.5s ease;transition:all 0.5s ease}
+header nav ul li a:hover{color:#b97242}
 header .logo{display:inline-block;margin:0 auto;padding:.5em}
 header .address,header .reservations{display:inline-block;font-size:.75em;font-weight:bold;padding:.5em;position:relative;text-align:left;}
 header .address i,header .reservations i{color:#e99f16}
@@ -19,3 +24,5 @@ section .combos .combo figcaption p{margin:0}
 section .combos .combo figcaption .name{font-family:'Lobster' cursive;font-size:1.3em}
 section .combos .combo figcaption .desc{color:#724d14;display:block;font-size:.7em;font-style:italic}
 section .combos .combo figcaption .view:before{content:'\e601';background:#c49c15;font-family:'icon';font-style:normal;height:40px;padding:.5em;position:absolute;right:0;text-align:center;top:0;width:50px}
+section .combos .see-More{background:#fff;-webkit-border-radius:.2em;border-radius:.2em;color:#724d14;font-style:italic;padding:.5em;text-decoration:none;-webkit-transition:all 0.5s ease;-moz-transition:all 0.5s ease;-o-transition:all 0.5s ease;-ms-transition:all 0.5s ease;transition:all 0.5s ease}
+section .combos .see-More:hover{background:#e99f16;color:#fff}

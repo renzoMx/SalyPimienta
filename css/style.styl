@@ -14,7 +14,23 @@ header
 	background url('../img/wood_bg.jpg')
 	border-top 5px solid #E99F16
 	overflow hidden
-	padding 2em 0.5em
+	padding-bottom 2em 
+	& nav
+		background #462D1C
+		margin 0
+		& ul 
+			margin 0
+			padding 0
+			& li 
+				display inline-block
+				font-family 'Lobster' cursive
+				padding 1em 0.5em
+				& a 
+					color #F0F0EE
+					text-decoration none
+					transition all .5s ease
+				& a:hover
+					color #B97242
 	& .logo
 		display inline-block
 		margin 0 auto
@@ -99,5 +115,16 @@ section
 					text-align center
 					top 0
 					width 50px
-					
+		& .see-More
+			background white
+			border-radius .2em
+			color #724d14
+			font-style italic
+			padding 0.5em
+			text-decoration none
+			transition all .5s ease
+		& .see-More:hover
+			background #E99F16
+			color white
+
 
