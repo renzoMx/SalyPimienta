@@ -1,0 +1,20 @@
+@import url("font.css");
+body{background:#101010;color:#f0f0ee;font-size:16px;font-family:"Open Sans",Sans Serif;text-align:center}
+header{background:url("../img/wood_bg.jpg");border-top:5px solid #e99f16;overflow:hidden;padding:2em .5em;}
+header .logo{display:inline-block;margin:0 auto;padding:.5em}
+header .address,header .reservations{display:inline-block;font-size:.75em;font-weight:bold;padding:.5em;position:relative;text-align:left;}
+header .address i,header .reservations i{color:#e99f16}
+header .address .location:before,header .reservations .location:before,header .address .cell:before,header .reservations .cell:before{font-family:'icon';font-style:normal;font-size:3.2em;position:absolute}
+header .address .location:before,header .reservations .location:before{content:'\e600';left:-25px;top:20px}
+header .address .cell:before,header .reservations .cell:before{content:'\e605';left:-30px;top:25px}
+header .address span,header .reservations span{display:inline-block;margin-top:1.5em;padding:left 3em;}
+header .address span p,header .reservations span p{margin:0}
+section{padding:.5em;}
+section .combos h2{font-weight:normal;margin:0}
+section .combos h3{color:#e99f16;font-style:italic;font-size:.9em;font-weight:normal;margin:0}
+section .combos .combo{border:5px solid #f0f0ee;margin:1.5em 0;overflow:hidden;}
+section .combos .combo img{width:100%}
+section .combos .combo figcaption{background:#e99f16;cursor:pointer;margin:0;padding:.5em;position:relative;text-align:left;}
+section .combos .combo figcaption p{margin:0}
+section .combos .combo figcaption .desc{color:#724d14;display:block;font-size:.7em;font-style:italic}
+section .combos .combo figcaption .view:before{content:'\e601';background:#c49c15;font-family:'icon';font-style:normal;height:40px;padding:.5em;position:absolute;right:0;text-align:center;top:0;width:50px}

@@ -1,0 +1,98 @@
+@import 'nib'
+@import 'nib/vendor'
+@import url('font.css')
+vendor-prefixes ?= moz ms o webkit official
+
+body
+	background #101010
+	color #F0F0EE
+	font-size 16px
+	font-family "Open Sans", Sans Serif
+	text-align center
+
+header
+	background url('../img/wood_bg.jpg')
+	border-top 5px solid #E99F16
+	overflow hidden
+	padding 2em 0.5em
+	& .logo
+		display inline-block
+		margin 0 auto
+		padding 0.5em
+	& .address,
+	& .reservations
+		display inline-block
+		font-size .75em
+		font-weight bold
+		padding 0.5em
+		position relative
+		text-align left
+		& i
+			color #E99F16
+		& .location:before,
+		& .cell:before
+			font-family 'icon'
+			font-style normal
+			font-size 3.2em
+			position absolute
+		& .location:before
+			content '\e600'
+			left -25px
+			top 20px
+		& .cell:before
+			content '\e605'
+			left -30px
+			top 25px
+		& span 
+			display inline-block
+			margin-top: 1.5em;
+			padding left 3em
+			& p 
+				margin 0
+section
+	padding 0.5em
+	& .combos
+		& h2
+			font-family 'Pacifico' cursive
+			font-weight normal
+			margin 0
+		& h3
+			color #E99F16
+			font-style italic
+			font-size .9em
+			font-weight normal
+			margin 0
+		& .combo 
+			border 5px solid #F0F0EE
+			margin 1.5em 0
+			overflow hidden
+			& img
+				width 100%
+			& figcaption
+				background #E99F16
+				cursor pointer
+				margin 0
+				padding 0.5em
+				position relative
+				text-align left
+				& p 
+					margin 0
+				& .desc
+					color #724d14
+					display block
+					font-size .7em
+					font-style italic					
+				& .view:before
+					content '\e601'
+					background #C49C15
+					font-family 'icon'
+					font-style normal
+					height 40px
+					padding 0.5em
+					position absolute 
+					right 0
+					text-align center
+					top 0
+					width 50px
+					
+
