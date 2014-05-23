@@ -10,11 +10,12 @@ header .address .cell:before,header .reservations .cell:before{content:'\e605';l
 header .address span,header .reservations span{display:inline-block;margin-top:1.5em;padding:left 3em;}
 header .address span p,header .reservations span p{margin:0}
 section{padding:.5em;}
-section .combos h2{font-weight:normal;margin:0}
+section .combos h2{font-family:'Lobster' cursive;font-size:2em;font-weight:normal;margin:0;margin-top:1em}
 section .combos h3{color:#e99f16;font-style:italic;font-size:.9em;font-weight:normal;margin:0}
 section .combos .combo{border:5px solid #f0f0ee;margin:1.5em 0;overflow:hidden;}
 section .combos .combo img{width:100%}
 section .combos .combo figcaption{background:#e99f16;cursor:pointer;margin:0;padding:.5em;position:relative;text-align:left;}
 section .combos .combo figcaption p{margin:0}
+section .combos .combo figcaption .name{font-family:'Lobster' cursive;font-size:1.3em}
 section .combos .combo figcaption .desc{color:#724d14;display:block;font-size:.7em;font-style:italic}
 section .combos .combo figcaption .view:before{content:'\e601';background:#c49c15;font-family:'icon';font-style:normal;height:40px;padding:.5em;position:absolute;right:0;text-align:center;top:0;width:50px}
