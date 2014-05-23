@@ -3,13 +3,21 @@
 @import url('font.css')
 vendor-prefixes ?= moz ms o webkit official
 
+.go:before
+	content '\e606'
+	font-family 'icon'
+	font-style normal
+	font-size 1.5em
+	margin 0.5em 0.3em
+hr 
+	opacity:.3
 body
 	background #101010
 	color #F0F0EE
 	font-size 16px
-	font-family "Open Sans", Sans Serif
+	font-family 'pt_sans'
+	margin 0
 	text-align center
-
 header
 	background url('../img/wood_bg.jpg')
 	border-top 5px solid #E99F16
@@ -23,7 +31,7 @@ header
 			padding 0
 			& li 
 				display inline-block
-				font-family 'Lobster' cursive
+				font-family 'burger'
 				padding 1em 0.5em
 				& a 
 					color #F0F0EE
@@ -38,7 +46,7 @@ header
 	& .address,
 	& .reservations
 		display inline-block
-		font-size .75em
+		font-size .7em
 		font-weight bold
 		padding 0.5em
 		position relative
@@ -68,8 +76,9 @@ header
 section
 	padding 0.5em
 	& .combos
+		margin-bottom 2em
 		& h2
-			font-family 'Lobster' cursive
+			font-family 'burger' cursive
 			font-size 2em
 			font-weight normal
 			margin 0
@@ -96,7 +105,7 @@ section
 				& p 
 					margin 0
 				& .name
-					font-family 'Lobster' cursive
+					font-family 'burger'
 					font-size 1.3em
 				& .desc
 					color #724d14
@@ -126,5 +135,120 @@ section
 		& .see-More:hover
 			background #E99F16
 			color white
+	& .arma-combo
+		margin 0
+		margin-bottom 2em
+		& h2
+			font-family 'burger'
+			font-weight normal
+			margin 0
+		& h3
+			color #E99F16
+			font-style italic
+			font-size .9em
+			font-weight normal
+			margin 0
+			margin-bottom 2em
+		& a 
+			background white
+			border-radius .2em
+			color #724d14
+			font-style italic
+			padding 0.5em
+			text-decoration none
+			transition all .5s ease
+		& a:hover
+			background #E99F16
+			color white
+	& .pedidos
+		& h2
+			font-family 'burger'
+			font-weight normal
+			margin 0
+		& h3
+			color #E99F16
+			font-style italic
+			font-size .9em
+			font-weight normal
+			margin 0
+			margin-bottom 2em
+	& .testimonios
+		& h2
+			font-family 'burger'
+			font-weight normal
+			margin 0
+		& h3
+			color #E99F16
+			font-style italic
+			font-size .9em
+			font-weight normal
+			margin 0
+			margin-bottom 2em
+		& .avatar			
+			& img
+				border 3px solid white
+				border-radius 50%
+				display inline-block
+				height 80px
+				width 80px
+		& figcaption
+			color white
+			& p
+				font-size .8em
+				margin 0
+			& .name
+				font-size 1.5em
+			& .user
+				color #462D1C
+footer
+	background #1d1817
+	margin 0
+	padding 0.5em
+	text-align left
+	& .socials
+		& .circle
+			background #342b29
+			border-radius 50%
+			color white
+			display inline-block
+			height 40px
+			margin 0.3em			
+			position relative
+			text-decoration none
+			transition all .5s ease
+			width 40px
+			& .facebook:before,
+			& .google:before,
+			& .twitter:before
+				font-family 'icon'
+				font-style normal
+				font-weight 1.5em
+				position absolute
+			& .facebook:before
+				content '\e603'
+				left 15px
+				top 12px
+			& .google:before
+				content '\e609'
+				left 14px
+				top 12px
+			& .twitter:before
+				content '\e602'
+				left 14px
+				top 12px
+		& .circle:hover
+			background #E99F16	
+	& .privacy
+		& span
+			color #E99F16
+			display  inline-block
+			font-size .8em
+			& p 
+				display inline-block
+				color #5d504b
+				
+		
+			
+
 
 
