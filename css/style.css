@@ -18,7 +18,7 @@ header .address span,header .reservations span{display:inline-block;margin-top:1
 header .address span p,header .reservations span p{margin:0}
 section{padding:.5em;}
 section .combos{margin-bottom:2em;}
-section .combos h2{font-family:'burger' cursive;font-size:2em;font-weight:normal;margin:0;margin-top:1em}
+section .combos h2{font-family:'burger';font-size:2em;font-weight:normal;margin:0;margin-top:1em}
 section .combos h3{color:#e99f16;font-style:italic;font-size:.9em;font-weight:normal;margin:0}
 section .combos .combo{border:5px solid #f0f0ee;margin:1.5em 0;overflow:hidden;}
 section .combos .combo img{width:100%}
@@ -52,3 +52,11 @@ footer .socials .circle .twitter:before{content:'\e602';left:14px;top:12px}
 footer .socials .circle:hover{background:#e99f16}
 footer .privacy span{color:#e99f16;display:inline-block;font-size:.8em;}
 footer .privacy span p{display:inline-block;color:#5d504b}
+@media screen and (min-width: 480px){header nav{margin-bottom:2em}
+header .address{font-size:.9em;margin-bottom:2em;margin-left:3em;float:left;}
+header .address span{margin-top:0}
+header .logo{display:block}
+header .reservations{float:right;font-size:1em;}
+header .reservations .cell:before{left:-35px;top:5px}
+header .reservations span{margin-top:0}
+}
