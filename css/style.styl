@@ -21,8 +21,8 @@ body
 header
 	background url('../img/wood_bg.jpg')
 	border-top 5px solid #E99F16
-	overflow hidden
-	padding-bottom 2em 
+	min-height 100px
+	margin-bottom 1em 
 	& nav
 		background #462D1C
 		margin 0
@@ -32,242 +32,327 @@ header
 			& li 
 				display inline-block
 				font-family 'burger'
-				padding 1em 0.5em
+				padding 1em 0.7em
 				& a 
 					color #F0F0EE
 					text-decoration none
 					transition all .5s ease
 				& a:hover
 					color #B97242
-	& .logo
-		display inline-block
-		margin 0 auto
-		padding 0.5em
-	& .address,
-	& .reservations
-		display inline-block
-		font-size .7em
-		font-weight bold
-		padding 0.5em
-		position relative
-		text-align left
-		& i
-			color #E99F16
-		& .location:before,
-		& .cell:before
-			font-family 'icon'
-			font-style normal
-			font-size 3.2em
+	& .header-inner
+		overflow hidden
+		position relative		
+		& .logo
 			position absolute
-		& .location:before
-			content '\e600'
-			left -25px
-			top 20px
-		& .cell:before
-			content '\e605'
-			left -30px
-			top 25px
-		& span 
-			display inline-block
-			margin-top: 1.5em;
-			padding left 3em
-			& p 
-				margin 0
-section
-	padding 0.5em
-	& .combos
-		margin-bottom 2em
-		& h2
-			font-family 'burger'
-			font-size 2em
-			font-weight normal
-			margin 0
-			margin-top 1em
-		& h3
-			color #E99F16
-			font-style italic
-			font-size .9em
-			font-weight normal
-			margin 0
-		& .combo 
-			border 5px solid #F0F0EE
-			margin 1.5em 0
+			left 0
+			margin-left auto
+			margin-right auto
 			overflow hidden
+			right 0
+			width 180px
 			& img
-				width 100%
-			& figcaption
-				background #E99F16
-				cursor pointer
+				width 180px
+		& .reservations
+			margin-top 9em 
+			float right
+			& span
+				& p
+					line-height 0.5em
+				& .number
+					font-size 1.2em
+					font-weight bold
+		& .address
+			margin-bottom 2em
+		& .address,
+		& .reservations
+			color #bda195
+			font-size .7em
+			padding 0.5em
+			position relative
+			text-align left		
+			& i
+				color #E99F16
+			& .location:before,
+			& .cell:before
+				font-family 'icon'
+				font-style normal
+				font-size 3.2em
+				position absolute
+			& .location:before
+				content '\e600'
+				left 5px
+				top 7px
+			& .cell:before
+				content '\e605'
+				left -30px
+				top 10px			
+			& .dir 
+				& p 					
+					line-height 0.5em
+					margin 1em 0.5em 0 2.5em			
+section
+	padding 0 0.5em
+	& .section-inner
+		& .combos
+			margin 1em 0
+			& h2
+				font-family 'burger'
+				font-size 2em
+				font-weight normal
 				margin 0
+				margin-top 1em
+			& h3
+				color #E99F16
+				font-style italic
+				font-size .9em
+				font-weight normal
+				margin 0
+			& .combo 
+				border 5px solid #F0F0EE
+				margin 1.5em 0
+				overflow hidden
+				& img
+					width 100%
+				& figcaption
+					background #E99F16
+					cursor pointer
+					margin 0
+					padding 0.5em
+					position relative
+					text-align left
+					& p 
+						margin 0
+					& .name
+						font-family 'burger'
+						font-size 1.3em
+					& .desc
+						color #724d14
+						display block
+						font-size .7em
+						font-style italic					
+					& .view:before
+						content '\e601'
+						background #C49C15
+						font-family 'icon'
+						font-style normal
+						height 40px
+						padding 0.5em
+						position absolute 
+						right 0
+						text-align center
+						top 0
+						width 50px
+			& .see-More
+				background white
+				border-radius .2em
+				color #724d14
+				font-style italic
 				padding 0.5em
-				position relative
-				text-align left
-				& p 
+				text-decoration none
+				transition all .5s ease
+			& .see-More:hover
+				background #E99F16
+				color white
+		& .arma-combo
+			margin 0
+			margin-bottom 2em
+			& h2
+				font-family 'burger'
+				font-weight normal
+				margin 0
+			& h3
+				color #E99F16
+				font-style italic
+				font-size .9em
+				font-weight normal
+				margin 0
+				margin-bottom 2em
+			& a 
+				background white
+				border-radius .2em
+				color #724d14
+				font-style italic
+				padding 0.5em
+				text-decoration none
+				transition all .5s ease
+			& a:hover
+				background #E99F16
+				color white
+		& .pedidos		
+			margin 1em 0
+			& h2
+				font-family 'burger'
+				font-weight normal
+				margin 0
+			& h3
+				color #E99F16
+				font-style italic
+				font-size .9em
+				font-weight normal
+				margin 0
+				margin-bottom 2em
+		& .testimonios		
+			margin 1em 0
+			& h2
+				font-family 'burger'
+				font-weight normal
+				margin 0
+			& h3
+				color #E99F16
+				font-style italic
+				font-size .9em
+				font-weight normal
+				margin 0
+				margin-bottom 2em
+			& .avatar			
+				& img
+					border 3px solid white
+					border-radius 50%
+					display inline-block
+					height 80px
+					width 80px
+			& figcaption
+				color white
+				& p
+					font-size .8em
 					margin 0
 				& .name
-					font-family 'burger'
-					font-size 1.3em
-				& .desc
-					color #724d14
-					display block
-					font-size .7em
-					font-style italic					
-				& .view:before
-					content '\e601'
-					background #C49C15
-					font-family 'icon'
-					font-style normal
-					height 40px
-					padding 0.5em
-					position absolute 
-					right 0
-					text-align center
-					top 0
-					width 50px
-		& .see-More
-			background white
-			border-radius .2em
-			color #724d14
-			font-style italic
-			padding 0.5em
-			text-decoration none
-			transition all .5s ease
-		& .see-More:hover
-			background #E99F16
-			color white
-	& .arma-combo
-		margin 0
-		margin-bottom 2em
-		& h2
-			font-family 'burger'
-			font-weight normal
-			margin 0
-		& h3
-			color #E99F16
-			font-style italic
-			font-size .9em
-			font-weight normal
-			margin 0
-			margin-bottom 2em
-		& a 
-			background white
-			border-radius .2em
-			color #724d14
-			font-style italic
-			padding 0.5em
-			text-decoration none
-			transition all .5s ease
-		& a:hover
-			background #E99F16
-			color white
-	& .pedidos
-		& h2
-			font-family 'burger'
-			font-weight normal
-			margin 0
-		& h3
-			color #E99F16
-			font-style italic
-			font-size .9em
-			font-weight normal
-			margin 0
-			margin-bottom 2em
-	& .testimonios
-		& h2
-			font-family 'burger'
-			font-weight normal
-			margin 0
-		& h3
-			color #E99F16
-			font-style italic
-			font-size .9em
-			font-weight normal
-			margin 0
-			margin-bottom 2em
-		& .avatar			
-			& img
-				border 3px solid white
-				border-radius 50%
-				display inline-block
-				height 80px
-				width 80px
-		& figcaption
-			color white
-			& p
-				font-size .8em
-				margin 0
-			& .name
-				font-size 1.5em
-			& .user
-				color #462D1C
+					font-size 1.5em
+				& .user
+					color #462D1C
 footer
 	background #1d1817
 	margin 0
 	padding 0.5em
 	text-align left
-	& .socials
-		& .circle
-			background #342b29
-			border-radius 50%
-			color white
-			display inline-block
-			height 40px
-			margin 0.3em			
-			position relative
-			text-decoration none
-			transition all .5s ease
-			width 40px
-			& .facebook:before,
-			& .google:before,
-			& .twitter:before
-				font-family 'icon'
-				font-style normal
-				font-weight 1.5em
-				position absolute
-			& .facebook:before
-				content '\e603'
-				left 15px
-				top 12px
-			& .google:before
-				content '\e609'
-				left 14px
-				top 12px
-			& .twitter:before
-				content '\e602'
-				left 14px
-				top 12px
-		& .circle:hover
-			background #E99F16	
-	& .privacy
-		& span
-			color #E99F16
-			display  inline-block
-			font-size .8em
-			& p 
+	& .footer-inner
+		& .socials
+			& .circle
+				background #342b29
+				border-radius 50%
+				color white
 				display inline-block
-				color #5d504b
-@media screen and (min-width: 480px)
-		
+				height 40px
+				margin 0.3em			
+				position relative
+				text-decoration none
+				transition all .5s ease
+				width 40px
+				& .facebook:before,
+				& .google:before,
+				& .twitter:before
+					font-family 'icon'
+					font-style normal
+					font-weight 1.5em
+					position absolute
+				& .facebook:before
+					content '\e603'
+					left 15px
+					top 12px
+				& .google:before
+					content '\e609'
+					left 14px
+					top 12px
+				& .twitter:before
+					content '\e602'
+					left 14px
+					top 12px
+			& .circle:hover
+				background #E99F16	
+		& .privacy
+			& span
+				color #E99F16
+				display  inline-block
+				font-size .8em
+				& p 
+					display inline-block
+					color #5d504b
+@media screen and (min-width: 480px)		
+	header 
+		& .header-inner
+			& .address
+				font-size .8em
+				margin 1em
+				& .location:before
+					top 10px
+				& span
+					margin-top 0
+			& .logo
+				display inline-block
+				vertical-align top
+				width 200px
+				& img
+					width 200px
+			& .reservations
+				display inline-block
+				font-size .8em
+				float right
+				margin-top 7em 
+				margin-right 1em
+				& .cell:before
+					left -35px
+					top: 32px;
+				& span
+					margin-right 1em
+					margin-top 0
+	section
+		& .section-inner
+			& .combos
+				& .combo
+					display inline-block
+					margin 0.2em auto
+					vertical-align top
+					width 300px
+			& hr 
+				width 80%
+			& .testimonios
+				margin 1em 0
+				& .avatar
+					& figcaption
+						& p 
+							margin 0 auto
+							width 80%
+	footer
+		& .footer-inner
+			margin 0 auto
+			width 90%
+@media screen and (min-width: 768px)
+	
 	header 
 		& nav
-			margin-bottom 2em
-		& .address
-			font-size .9em
-			margin-bottom 2em
-			margin-left 3em
-			float left
-			& span
-				margin-top 0
-		& .logo
-			display block
-		& .reservations
-			float right
-			font-size 1em
-			& .cell:before
-				left -35px
-				top: 5px;
-			& span
-				margin-top 0
+			& .nav-inner
+				& ul 
+					& li 
+						font-size 	1.3em
+						font-weight normal
+		& .header-inner
+			margin 0 auto
+			text-align left
+			width 95%
+			& .address
+				display inline-block 
+				font-size .7em
+				margin-top 2em
+				vertical-align top
+			& .logo
+				display inline-block 
+				vertical-align top
+				& img 
+					width 180px
+			& .reservations
+				display inline-block
+				font-size .8em
+				float right
+				margin-top 2em
+				vertical-align top
+	section
+		& .section-inner
+			& .combos
+				& .combo
+					display inline-block
+					margin 0.3em auto
+					vertical-align top
+					width 300px
 			
 			
 
