@@ -3,130 +3,137 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 	<meta charset="UTF-8"/>
-	<title>Sal y Pimienta Restaurant</title>
+	<title>Restaurant Sal y Pimienta</title>
 	<link rel="stylesheet" href="css/normalize.css"/>
     <link rel="stylesheet" href="css/style.css"/>
-    <link rel="stylesheet" href="css/responsive.css"/>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600' rel='stylesheet' type='text/css'/>
     <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'/>
 </head>
 <body>
-	<header>
+	<header>		
 		<nav>
-			<ul>
-				<li><a href="">Acerca</a></li>
-				<li><a href="">Carta</a></li>
-				<li><a href="">Eventos</a></li>
-				<li><a href="">Contacto</a></li>
-			</ul>
+			<div class="nav-inner">
+				<ul>
+					<li><a href="">Acerca</a></li>
+					<li><a href="">Carta</a></li>
+					<li><a href="">Eventos</a></li>
+					<li><a href="">Contacto</a></li>
+				</ul>
+			</div>
 		</nav>
-		<div class="address">
-			<i class="location"></i>
-			<span>
-				<p>AV. GUARDIA CIVIL NORTE MZ. J LOTE 6</p>
-				<p>URB. LOS PARRALES DE SURCO.</p>
-			</span>
-		</div>
-		<figure class="logo">
-			<img src="img/logx.png"/>
-		</figure>
-		<div class="reservations">
-			<i class="cell"></i>
-			<span>
-				<p>RESERVACIONES:</p>
-				<p>(01) 248-9389</p>
-			</span>
+		<div class="header-inner">
+			<div class="address">
+				<i class="location"></i>
+				<span class="dir">
+					<p>AV. GUARDIA CIVIL NORTE MZ. J LOTE 6</p>
+					<p>URB. LOS PARRALES DE SURCO.</p>
+				</span>
+			</div>
+			<figure class="logo">
+				<a href="index.html"><img src="img/logx.png"/></a>
+			</figure>
+			<div class="reservations">
+				<i class="cell"></i>
+				<span>
+					<p>RESERVACIONES:</p>
+					<p class="number">(01) 248-9389</p>
+				</span>
+			</div>			
 		</div>
 	</header>
 	<section>
-		<article class="combos">
-			<hgroup>
-				<h2>Los Mejores Combos</h2>
-				<h3>Todas los combos incluyen refresco !</h3>
-			</hgroup>
-			<figure class="combo">
-				<img src="img/combo1.jpg"/>
-				<figcaption>
-					<p class="name">Anticucho Especial</p>
-					<p class="desc">Sal y Pimienta</p>
-					<p class="view"></p>
-				</figcaption>
-			</figure>
-			<figure class="combo">
-				<img src="img/combo2.jpg"/>
-				<figcaption>
-					<p class="name">Lomo Saltado</p>
-					<p class="desc">Sal y Pimienta</p>
-					<p class="view"></p>
-				</figcaption>
-			</figure>
-			<figure class="combo">
-				<img src="img/combo3.jpg"/>
-				<figcaption>
-					<p class="name">Jalea Especial</p>
-					<p class="desc">Sal y Pimienta</p>
-					<p class="view"></p>
-				</figcaption>
-			</figure>			
-		</article>
-		<article class="arma-combo">
-			<hgroup>
-				<h2>Quieres armar tu combo?</h2>
-				<h3>Ahora puedes armar tu propio combo!</h3>
-			</hgroup>
-			<a href="">Arma tu <strong>combo</strong> ya...!<i class="go"></i></a>
-		</article>
-		<hr/>
-		<article class="pedidos">
-			<hgroup>
-				<h2>Delivery</h2>
-				<h3>Haz tu pedido llamando a los números:</h3>
-			</hgroup>
-			<ul>
-				<li><i>c</i>(01) 989-212-213</li>
-			</ul>
-			<ul>
-				<li><i>c</i>(01) 989-212-213</li>
-			</ul>
-			<ul>
-				<li><i>c</i>(01) 989-212-213</li>
-			</ul>
-		</article>
-		<hr/>		
-		<article class="testimonios">
-			<hgroup>
-				<h2>Testimonios</h2>
-				<h3>Lo que opinan nuestros clientes!</h3>
-			</hgroup>
-			<div class="tweets">
-				<figure class="avatar">
-					<img src="img/combo1.jpg">
+		<div class="section-inner">
+			<article class="combos">
+				<hgroup>
+					<h2>Los Mejores Combos</h2>
+					<h3>Todas los combos incluyen refresco !</h3>
+				</hgroup>
+				<figure class="combo">
+					<img src="img/combo1.jpg"/>
 					<figcaption>
-						<p class="name">Romy Ortega<p>
-						<p class="user">@romy_o<p>
-						<p>Estoy muy satisfecha con la buena atencion y sobre todo por el gran sabor.</p>
+						<p class="name">Anticucho Especial</p>
+						<p class="desc">Sal y Pimienta</p>
+						<p class="view"></p>
 					</figcaption>
 				</figure>
-			</div>
-		</article>
+				<figure class="combo">
+					<img src="img/combo2.jpg"/>
+					<figcaption>
+						<p class="name">Lomo Saltado</p>
+						<p class="desc">Sal y Pimienta</p>
+						<p class="view"></p>
+					</figcaption>
+				</figure>
+				<figure class="combo">
+					<img src="img/combo3.jpg"/>
+					<figcaption>
+						<p class="name">Jalea Especial</p>
+						<p class="desc">Sal y Pimienta</p>
+						<p class="view"></p>
+					</figcaption>
+				</figure>			
+			</article>
+			<article class="arma-combo">
+				<hgroup>
+					<h2>Quieres armar tu combo?</h2>
+					<h3>Ahora puedes armar tu propio combo!</h3>
+				</hgroup>
+				<a href="">Arma tu <strong>combo</strong> ya...!<i class="go"></i></a>
+			</article>
+			<hr/>
+			<article class="pedidos">
+				<hgroup>
+					<h2>Delivery</h2>
+					<h3>Haz tu pedido llamando a los números:</h3>
+				</hgroup>
+				<ul>
+					<li><i>c</i>(01) 989-212-213</li>
+				</ul>
+				<ul>
+					<li><i>c</i>(01) 989-212-213</li>
+				</ul>
+				<ul>
+					<li><i>c</i>(01) 989-212-213</li>
+				</ul>
+			</article>
+			<hr/>		
+			<article class="testimonios">
+				<hgroup>
+					<h2>Testimonios</h2>
+					<h3>Lo que opinan nuestros clientes!</h3>
+				</hgroup>
+				<div class="tweets">
+					<figure class="avatar">
+						<img src="img/combo1.jpg">
+						<figcaption>
+							<p class="name">Romy Ortega<p>
+							<p class="user">@romy_o<p>
+							<p>Estoy muy satisfecha con la buena atencion y sobre todo por el gran sabor.</p>
+						</figcaption>
+					</figure>
+				</div>
+			</article>
+		</div>
 	</section>
 	<footer>
-		<div class="socials">
-			<a href="" class="circle">
-				<i class="facebook"></i>
-			</a>
-			<a href="" class="circle">
-				<i class="google"></i>
-			</a>
-			<a href="" class="circle">
-				<i class="twitter"></i>
-			</a>
-		</div>
-		<div class="privacy">
-			<span>SALYPIMIENTA <p>&copy; 2014 | TODOS LOS DERECHOS RESERVADOS</p></span>
+		<div class="footer-inner">
+			<div class="socials">
+				<a href="" class="circle">
+					<i class="facebook"></i>
+				</a>
+				<a href="" class="circle">
+					<i class="google"></i>
+				</a>
+				<a href="" class="circle">
+					<i class="twitter"></i>
+				</a>
+			</div>
+			<div class="privacy">
+				<span>SALYPIMIENTA <p>&copy; 2014 | TODOS LOS DERECHOS RESERVADOS</p></span>
+			</div>
 		</div>
 	</footer>
-	<script src="js/jquery.js"></script>	
+	<script src="js/jquery.js"></script>
     <script src="js/modernizr.js"></script>
 </body>
 </html>

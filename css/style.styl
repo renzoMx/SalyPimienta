@@ -10,7 +10,7 @@ vendor-prefixes ?= moz ms o webkit official
 	font-size 1.5em
 	margin 0.5em 0.3em
 hr 
-	opacity:.3
+	opacity .3
 body
 	background #101010
 	color #F0F0EE
@@ -61,6 +61,8 @@ header
 				& .number
 					font-size 1.2em
 					font-weight bold
+		& .form-container
+			display none
 		& .address
 			margin-bottom 2em
 		& .address,
@@ -89,7 +91,7 @@ header
 			& .dir 
 				& p 					
 					line-height 0.5em
-					margin 1em 0.5em 0 2.5em			
+					margin 1em 0.5em 0 2.5em	
 section
 	padding 0 0.5em
 	& .section-inner
@@ -267,6 +269,7 @@ footer
 				& p 
 					display inline-block
 					color #5d504b
+
 @media screen and (min-width: 480px)		
 	header 
 		& .header-inner
@@ -291,7 +294,7 @@ footer
 				margin-right 1em
 				& .cell:before
 					left -35px
-					top: 32px;
+					top  32px 
 				& span
 					margin-right 1em
 					margin-top 0
@@ -316,15 +319,10 @@ footer
 		& .footer-inner
 			margin 0 auto
 			width 90%
-@media screen and (min-width: 768px)
-	
-	header 
-		& nav
-			& .nav-inner
-				& ul 
-					& li 
-						font-size 	1.3em
-						font-weight normal
+
+@media screen and (min-width: 768px)	
+	header 	
+		min-height 250px	
 		& .header-inner
 			margin 0 auto
 			text-align left
@@ -337,14 +335,15 @@ footer
 			& .logo
 				display inline-block 
 				vertical-align top
+				width 250px
 				& img 
-					width 180px
+					width 250px
 			& .reservations
 				display inline-block
 				font-size .8em
 				float right
 				margin-top 2em
-				vertical-align top
+				vertical-align top	
 	section
 		& .section-inner
 			& .combos
@@ -352,7 +351,17 @@ footer
 					display inline-block
 					margin 0.3em auto
 					vertical-align top
-					width 300px
+					width 250px
+			& .arma-combo,
+			& .pedidos,
+			& .testimonios
+				display inline-block
+				margin 0
+				vertical-align top
+				width 250px							
+			& hr 
+				display none
+
 			
 			
 

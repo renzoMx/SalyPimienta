@@ -14,6 +14,7 @@ header .header-inner .logo img{width:180px}
 header .header-inner .reservations{margin-top:9em;float:right;}
 header .header-inner .reservations span p{line-height:.5em}
 header .header-inner .reservations span .number{font-size:1.2em;font-weight:bold}
+header .header-inner .form-container{display:none}
 header .header-inner .address{margin-bottom:2em}
 header .header-inner .address,header .header-inner .reservations{color:#bda195;font-size:.7em;padding:.5em;position:relative;text-align:left;}
 header .header-inner .address i,header .header-inner .reservations i{color:#e99f16}
@@ -72,11 +73,13 @@ section .section-inner hr{width:80%}
 section .section-inner .testimonios{margin:1em 0;}
 section .section-inner .testimonios .avatar figcaption p{margin:0 auto;width:80%}
 footer .footer-inner{margin:0 auto;width:90%}
-}@media screen and (min-width: 768px){header nav .nav-inner ul li{font-size:1.3em;font-weight:normal}
+}@media screen and (min-width: 768px){header{min-height:250px;}
 header .header-inner{margin:0 auto;text-align:left;width:95%;}
 header .header-inner .address{display:inline-block;font-size:.7em;margin-top:2em;vertical-align:top}
-header .header-inner .logo{display:inline-block;vertical-align:top;}
-header .header-inner .logo img{width:180px}
+header .header-inner .logo{display:inline-block;vertical-align:top;width:250px;}
+header .header-inner .logo img{width:250px}
 header .header-inner .reservations{display:inline-block;font-size:.8em;float:right;margin-top:2em;vertical-align:top}
-section .section-inner .combos .combo{display:inline-block;margin:.3em auto;vertical-align:top;width:300px}
+section .section-inner .combos .combo{display:inline-block;margin:.3em auto;vertical-align:top;width:250px}
+section .section-inner .arma-combo,section .section-inner .pedidos,section .section-inner .testimonios{display:inline-block;margin:0;vertical-align:top;width:250px}
+section .section-inner hr{display:none}
 }
